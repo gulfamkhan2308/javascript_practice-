@@ -143,3 +143,26 @@ console.log("hellow world")
 // let txt = prompt("Enetr your text")
 
 // alert('The')
+
+
+//*****************loop .for loop,while loop,do while loop*/
+// for(a=0; a<11; a++){
+// document.write(a, "sohail khan <br>" )
+// } 
+
+//use of ary in for loop
+
+let guests = ['kareem ullah','guli','shahid','zulkifal','zulkarnain','imran khan','ali khan','Ali jan']
+for (let a = 0; a<guests.length; a++){
+    // if(guests[a].startsWith('a') ||guests[a].startsWith('A'))
+    if(guests[a].endsWith('l') )
+// document.write(a, guests[a],  '<br>')
+document.write(`Mr. ${guests[a]} you are invited to my birth day <br>`)
+else {
+    document.write(`Mr. ${guests[a]} sorry <br>`)
+} 
+}
+
+let txt = prompt("enter you text here")
+console.log(`the number of caracters in your text are : ${txt.length}`)
+console.log(`the number if words in your txt are ${txt.split('').length}`)
