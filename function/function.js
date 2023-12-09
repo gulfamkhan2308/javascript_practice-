@@ -94,28 +94,35 @@
 // // // //if some one pays tax more than 2k say  he is good citizn
 
 
-// // let salary = prompt("enter your salary")
+let salary = prompt("enter your salary")
 
-// // function taxRate(salary){
-// //     if (salary>= 100000){
-// //        return salary*.15
-// //     }
-// //     else if (salary>=70000){
-// //         return salary*.10
-// //     }
-// //     else if (salary>= 50000){
-// //          return salary*.05
-// //         }
-// //     else if (salary>= 30000){
-// //         return salary*.02
-// //     }
-// //     else{
-// //         return salary*.01
-// //     }
+function taxRate(salary){
+    if (salary>= 100000){
+       return salary*.15
+    }
+    else if (salary>=70000){
+        return salary*.10
+    }
+    else if (salary>= 50000){
+         return salary*.05
+        }
+    else if (salary>= 30000){
+        return salary*.02
+    }
+    else{
+        return salary*.01
+    }
     
-// // }
-// // let a = taxRate(parseFloat(salary))
-// // document.write(a)
+}
+
+let a = taxRate(parseFloat(salary))
+if (a>=2000){
+    document.write("you paid "+ a + " tax You are a good citizn")
+}
+else{
+    document.write("you paid " + a +" Tax")
+}
+
 // // ......................................................................................
 
 // // let day_of_week=prompt("enter the day of week").toLowerCase()
