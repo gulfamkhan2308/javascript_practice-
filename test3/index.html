@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Information Form</title>
+
+</head>
+<body>
+
+<h2>Student Information Form</h2>
+
+<!-- Form to collect student information -->
+<form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="id">ID:</label><br>
+    <input type="text" id="id" name="id" required><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" required><br><br>
+
+    <!-- Use onkeypress to call handleEnterKey function -->
+    <input type="button" value="Add Student" onkeypress="handleEnterKey(event)">
+</form>
+
+<br>
+
+<!-- Label to retrieve student information by ID -->
+<label for="searchId">Enter Student ID to retrieve information:</label><br>
+<input type="text" id="searchId" name="searchId" required>
+<button type="button" onclick="retrieveStudent()">Retrieve Student</button>
+
+<br><br>
+
+<!-- Placeholder for displaying retrieved student information -->
+<div id="result"></div>
+<script src="test3.mjs"></script>
+</body>
+</html>

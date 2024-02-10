@@ -7,16 +7,62 @@
     </title>
 </head>
 <body>
-   <p>Laptop computer:</p> <p><s>Was $995</s></p> <p>Now only $375</p>
+   
 
 
     <script>
-        let myFirstName = "Gulfam";
-        let myLastName = "khan";
-        console.log(myFirstName + ' '+ myLastName)
-        let myName = "Gulfam";
-        let myNumber = 2308
-        console.log(myName,myNumber)
+   let cars = [  
+        {  
+      model: "Golf",
+          make: "Volkswagen",    
+          year: 1999,    
+          color: "black",  
+        },  
+        { 
+           model: "Picanto",    
+           make: "Kia",    
+           year: 2020,    
+           color: "red",  
+        },  
+        {    
+            model: "Peugeot",    
+            make: "208",    
+            year: 2020,    
+            color: "black",  
+        },  
+   
+        {    
+            model: "Fiat",    
+            make: "Punto",    
+            year: 2020,    
+            color: "black",  
+        } 
+    ];
+      for (let i = 0; i<cars.length;i++){
+        if(cars[i].year ===2020){
+                console.log(cars[i])
+            
+        }
+      }
+
+       
+
+
+        // let names = ["James", "Alicia", "Fatiha", "Maria", "Bert"]
+        // names.sort()
+        // console.log(names)
+        // arr5 = [1, 2, 3,4,5,6];
+        // let fv = arr5.find(function(w) {return w ===3})
+        // let findValue2 = arr5.find(e => e === 2)
+        // console.log(fv, findValue2)
+        
+        // let a = "world"; let b = `Hello ${a}!`; console.log(b)
+        // let myFirstName = "Gulfam";
+        // let myLastName = "khan";
+        // console.log(myFirstName + ' '+ myLastName)
+        // let myName = "Gulfam";
+        // let myNumber = 2308
+        // console.log(myName,myNumber)
     </script>
 </body>
 </html>
